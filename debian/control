@@ -19,12 +19,12 @@ Build-Depends: cmake,
                libqt6positioning6-plugins (>= 6.2),
                libqt6charts6-dev (>= 6.2),
                libqt6opengl6-dev (>= 6.2),
-               libqt6webchannel6-dev (>= 6.2) [amd64],
-               libqt6webenginewidgets6 (>= 6.2) [amd64],
-               libqt6webenginecore6-bin (>= 6.2) [amd64],
-               libqt6webengine6-data (>= 6.2) [amd64],
-               qt6-webengine-dev (>= 6.2) [amd64],
-               qt6-webengine-dev-tools (>= 6.2) [amd64],
+               libqt6webchannel6-dev (>= 6.2) [amd64 arm64],
+               libqt6webenginewidgets6 (>= 6.2) [amd64 arm64],
+               libqt6webenginecore6-bin (>= 6.2) [amd64 arm64],
+               libqt6webengine6-data (>= 6.2) [amd64 arm64],
+               qt6-webengine-dev (>= 6.2) [amd64 arm64],
+               qt6-webengine-dev-tools (>= 6.2) [amd64 arm64],
                zlib1g-dev
 Standards-Version: 4.5.0
 Vcs-Browser: https://github.com/Stellarium/stellarium
@@ -35,8 +35,8 @@ Package: stellarium-qt6
 Architecture: any
 Conflicts: stellarium
 Depends: stellarium-qt6-data (= ${source:Version}),
-         libqt6webenginecore6-bin (>= 6.2) [amd64],
-         libqt6webengine6-data (>= 6.2) [amd64],
+         libqt6webenginecore6-bin (>= 6.2) [amd64 arm64],
+         libqt6webengine6-data (>= 6.2) [amd64 arm64],
          ${misc:Depends},
          ${shlibs:Depends}
 Description: real-time photo-realistic sky generator
