@@ -21,6 +21,7 @@ Build-Depends: cmake,
                libqt6opengl6-dev (>= 6.2),
                libqt6webchannel6-dev (>= 6.2) [amd64],
                libqt6webenginewidgets6 (>= 6.2) [amd64],
+               libqt6webenginecore6-bin (>= 6.2) [amd64],
                qt6-webengine-dev (>= 6.2) [amd64],
                qt6-webengine-dev-tools (>= 6.2) [amd64],
                zlib1g-dev
@@ -33,6 +34,7 @@ Package: stellarium-qt6
 Architecture: any
 Conflicts: stellarium
 Depends: stellarium-qt6-data (= ${source:Version}),
+         libqt6webenginecore6-bin (>= 6.2) [amd64],
          ${misc:Depends},
          ${shlibs:Depends}
 Description: real-time photo-realistic sky generator
